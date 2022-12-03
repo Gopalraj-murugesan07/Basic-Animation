@@ -1,0 +1,91 @@
+<html>
+    <head><title>Basic Website</title></head>
+    <style>
+        * {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+#nav {
+    background-color: rgb(246, 251, 251);
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h2 {
+    animation: fall 2s infinite;
+}
+@keyframes fall {
+    0% {
+       margin-top: -200px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+.hell {
+    height: 400;
+    width: 400;
+    padding-top: 70px;
+    
+}
+
+#hero {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: center;
+    animation: flash 2s infinite;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#foot {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0% {
+       transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+    </style>
+    <body>
+        
+        <div id="container">
+            <div id="nav">
+               <h2>TAJMAHAL</h2>
+            </div>
+
+            <div id="hero">
+               <img  class="hell" src="https://wallpapercave.com/wp/wp6016889.jpg"
+            rel="logo">
+        </div>
+
+        <div id="foot">
+            <h3>Taj Mahal is famous for Own beauty </h3>
+        </div>
+        </div>
+
+    </body>
+</html>
